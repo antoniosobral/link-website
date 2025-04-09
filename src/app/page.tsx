@@ -2,7 +2,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col items-center justify-center min-h-screen bg-[#2E3A46] text-gray-200 p-4">
+    <main
+      className="relative flex flex-col items-center justify-center min-h-screen bg-[#2E3A46] text-gray-200 p-4"
+      style={{
+        backgroundImage: 'url("/background.png")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {/* Logo Centralizado */}
       <div className="flex flex-col items-center text-center">
         <Image
