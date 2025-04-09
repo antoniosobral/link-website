@@ -19,6 +19,11 @@ export default function Home() {
         COMING SOON
       </p>
 
+      {/* Email de contato no canto inferior esquerdo */}
+      <div className="absolute bottom-8 left-8">
+        <p className="text-sm text-gray-300">contato@lynkhc.com.br</p>
+      </div>
+
       {/* Ícone no canto inferior direito */}
       <div className="absolute bottom-8 right-8">
         <Image
