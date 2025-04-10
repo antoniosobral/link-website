@@ -23,24 +23,16 @@ export default function Home() {
       </div>
 
       {/* Texto "COMING SOON" no Bottom */}
-      <p className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-sm tracking-widest">
+      <p className="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-sm tracking-widest sm:bottom-8">
         COMING SOON
       </p>
 
-      {/* Email de contato no canto inferior esquerdo */}
-      <div className="absolute bottom-8 left-8">
-        <p className="text-sm text-gray-300">contato@lynkhc.com.br</p>
+      {/* Email de contato no canto inferior esquerdo no desktop e centralizado no mobile */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-gray-300 sm:left-8 sm:transform-none">
+        <p>contato@lynkhc.com.br</p>
       </div>
 
       {/* Ícone no canto inferior direito */}
-      <div className="absolute bottom-8 right-8">
-        <Image
-          src="/icon.png" // Caminho para o ícone
-          alt="Lynk Icon"
-          width={50} // Ajuste a largura conforme necessário
-          height={50} // Ajuste a altura conforme necessário
-        />
-      </div>
     </main>
   );
 }
